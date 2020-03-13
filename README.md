@@ -82,4 +82,4 @@ ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 
 [6] Lu, Y., Huang, K., & Liu, C. L. (2016). A fast projected fixed-point algorithm for large graph matching. Pattern Recognition, 60, 971-982.
 
-[7] Carpaneto, G., Martello, S., & Toth, P. (1988). Algorithms and codes for the assignment problem. Annals of operations research, 13(1), 191-223.
+[7] Jonker, R., & Volgenant, A. (1987). A shortest augmenting path algorithm for dense and sparse linear assignment problems. Computing, 38(4), 325-340.
