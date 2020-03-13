@@ -20,7 +20,7 @@ where <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k=C_k+D_k=Y_
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k^0">: the <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k"> matrix with zero padding and permutation matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;P"> if necessary,
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;C^{(k)}">: the common-pattern matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;C"> rescaled to the magnitude of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k">, 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;C^{(k)}">: the common-pattern matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;C"> rescaled with the magnitude of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k">, 
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Delta_k">: the distinctive-pattern matrix.
 
