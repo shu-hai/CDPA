@@ -41,13 +41,27 @@ ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 
 with the function parameters
 
-r_1, r_2: the ranks of <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_1^{[:,1]})"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_2^{[:,1]})">
+r_1, r_2: the ranks of <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_1^{[:,1]})"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_2^{[:,1]})">. 
 
-r_12: the rank of <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_1^{[:,1]},X_2^{[:,1]})">
+method: If r_1 and r_2 are None, then for the selection of r_1 and r_2, method='ED' and method=None use the ED method [3], and method='GR' uses the GR method [4].
 
-method: if method='ED, t
+r_12: the rank of <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_1^{[:,1]},X_2^{[:,1]})">. If r_12=None, then r_12 is automatically selected by the MDL-IC method [5].
+
+P_set, P_mat, assignment: If P_set=0, no row matching of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1^0"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2^0">. If P_set=1, then the row matching is implemented by permutating X_2 to be PX_2: in particular, if P_mat=None, then assignment=1 and assignment=0 respectively use a greedy algorithm [6] (fast but less accurate) and the Jonker-Volgenant algorithm [] for the DSPFP method [6] for the row matching, and otherwise P_mat can be assigned to be a given permutation matrix.
+
+
 
 
 [1] Qu, Z., & Shu, H. (2019). CDPA: Common and Distinctive Pattern Analysis between High-dimensional Datasets. arXiv preprint [arXiv:1912.09989](https://arxiv.org/abs/1912.09989).
 
 [2] Shu, H., Wang, X., & Zhu, H. (2019) D-CCA: A Decomposition-based Canonical Correlation Analysis for High-dimensional Datasets. Journal of the American Statistical Association, [DOI: 10.1080/01621459.2018.1543599](https://doi.org/10.1080/01621459.2018.1543599) 
+ 
+[3] Onatski, A. (2010). Determining the number of factors from empirical distribution of eigenvalues. The Review of Economics and Statistics, 92(4), 1004-1016.
+
+[4] Ahn, S. C., & Horenstein, A. R. (2013). Eigenvalue ratio test for the number of factors. Econometrica, 81(3), 1203-1227.
+
+[5] Song, Y., Schreier, P. J., Ramírez, D., & Hasija, T. (2016). Canonical correlation analysis of high-dimensional data with very small sample support. Signal Processing, 128, 449-458.
+
+[6] Lu, Y., Huang, K., & Liu, C. L. (2016). A fast projected fixed-point algorithm for large graph matching. Pattern Recognition, 60, 971-982.
+
+[7] Carpaneto, G., Martello, S., & Toth, P. (1988). Algorithms and codes for the assignment problem. Annals of operations research, 13(1), 191-223.
