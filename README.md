@@ -16,7 +16,7 @@ where <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k=C_k+D_k=Y_
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;D_k">: the distinctive-source matrix,
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;E_k">: the distinctive-source matrix,
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;E_k">: the noise matrix,
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k^0">: the <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k"> matrix with zero padding and permutation matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;P"> if necessary,
 
