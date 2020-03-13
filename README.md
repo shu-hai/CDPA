@@ -26,20 +26,20 @@ where <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k=C_k+D_k=Y_
 
 <br/>
 
-Use the CDPA function:
+**Use the CDPA function:**
 ```
 X_1_hat, X_2_hat, C_1_hat, C_2_hat, D_1_hat, D_2_hat, r_1_hat, r_2_hat, r_12_hat, \
 ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat, P_mat_hat \
 = dcca.CDPA(Y_1, Y_2, r_1=None, r_2=None, r_12=None, method=None, P_set = 1, P_mat=None, assignment=1)   
 ```
-or 
+**or**
 ```
 X_1_hat, X_2_hat, C_1_hat, C_2_hat, D_1_hat, D_2_hat, r_1_hat, r_2_hat, r_12_hat, \
 ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 = dcca.CDPA(Y_1, Y_2, r_1=None, r_2=None, r_12=None, method=None, P_set = 0)   
 ```
 
-with the function parameters
+**with the function parameters:**
 
 r_1, r_2: the ranks of <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_1^{[:,1]})"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_2^{[:,1]})">. 
 
@@ -47,7 +47,24 @@ method: If r_1 and r_2 are None, then for the selection of r_1 and r_2, method='
 
 r_12: the rank of <img src="https://latex.codecogs.com/svg.latex?\Large&space;cov(X_1^{[:,1]},X_2^{[:,1]})">. If r_12=None, then r_12 is automatically selected by the MDL-IC method [5].
 
-P_set, P_mat, assignment: If P_set=0, no row matching of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1^0"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2^0">. If P_set=1, then the row matching is implemented by permutating X_2 to be PX_2: in particular, if P_mat=None, then assignment=1 and assignment=0 respectively use a greedy algorithm [6] (fast but less accurate) and the Jonker-Volgenant algorithm [] for the DSPFP method [6] for the row matching, and otherwise P_mat can be assigned to be a given permutation matrix.
+P_set, P_mat, assignment: If P_set=0, no row matching of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2">. If P_set=1, then the row matching is implemented by permutating <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2"> to be <img src="https://latex.codecogs.com/svg.latex?\Large&space;PX_2">: in particular, if P_mat=None, then assignment=1 and assignment=0 respectively use a greedy algorithm [6] (fast but less accurate) and the Jonker-Volgenant algorithm [7] for the DSPFP method [6] for the row matching, and otherwise P_mat can be assigned to be a given permutation matrix.
+
+**with output:**
+
+X_1_hat, X_2_hat, C_1_hat, C_2_hat, D_1_hat, D_2_hat: the D-CCA matrix estimates [2] for <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k=C_k+D_k">.
+
+r_1_hat, r_2_hat, r_12_hat: estimates of r_1, r_2, r_12
+
+ccor_hat, ctheta_hat: the estimated canonical correlations and associated angles between the respective latent-factor spaces of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2">.
+
+C_mat_hat: the estimate for the unscaled common-pattern matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;C"> of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2">.
+
+C_mat_neg_hat: the estimate for the unscaled common-pattern matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;C"> of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;-X_2">.
+
+ptheta_hat, pcor_hat: the estimated principal angles and their cosines between the respective column spaces of <img src="https://latex.codecogs.com/svg.latex?\Large&space;B_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;B_2"> that are coefficient matrices of 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;C_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;C_2"> on the common latent factors of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2">.
+
+P_mat_hat: the estimate fo the permutation matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;P> for <img src="https://latex.codecogs.com/svg.latex?\Large&space;PX_2>.
 
 
 
