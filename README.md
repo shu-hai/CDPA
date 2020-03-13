@@ -7,6 +7,7 @@ be two datasets measured on a common set of <img src="https://render.githubuserc
 <p align="center">
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k^0=C^{(k)}+\Delta_k">
 </p>
+
 where <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k=C_k+D_k=Y_k-E_k"> is obtained from the D-CCA method. Specifically,
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k">: the signal matrix,
@@ -64,7 +65,7 @@ ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 - ptheta_hat, pcor_hat: the estimated principal angles and their cosines between the respective column spaces of <img src="https://latex.codecogs.com/svg.latex?\Large&space;B_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;B_2"> that are coefficient matrices of 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;C_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;C_2"> on the common latent factors of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2">.
 
-- P_mat_hat: the estimate fo the permutation matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;P> for <img src="https://latex.codecogs.com/svg.latex?\Large&space;PX_2>.
+- P_mat_hat: the estimate fo the permutation matrix <img src="https://latex.codecogs.com/svg.latex?\Large&space;P"> for <img src="https://latex.codecogs.com/svg.latex?\Large&space;PX_2">.
 
 
 
