@@ -1,5 +1,5 @@
 # CDPA: Common and Distinctive Pattern Analysis between High-dimensional Datasets
-This python package implements the CDPA method proposed in the paper [1]. See [example.py](https://github.com/shu-hai/D-CCA/blob/master/example.py) for details, with Python 3.6.3 (or above) and the lapjv package (pip install lapjv).
+This python package implements the CDPA method proposed in the paper [1]. See [example.py](https://github.com/shu-hai/CDPA/blob/master/example.py) for details, with Python 3.6.3 (or above) and the lapjv package (pip install lapjv).
 
 Let <img src="https://render.githubusercontent.com/render/math?math=Y_k\in \mathbb{R}^{p_k\times n}, k=1,2">
 be two datasets measured on a common set of <img src="https://render.githubusercontent.com/render/math?math=n"> objects, where <img src="https://render.githubusercontent.com/render/math?math=p_k"> is the number of variables in the <img src="https://render.githubusercontent.com/render/math?math=k">-th dataset. The CDPA method conducts the following decomposition:
