@@ -54,7 +54,7 @@ ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 
 - X_1_hat, X_2_hat, C_1_hat, C_2_hat, D_1_hat, D_2_hat: the D-CCA matrix estimates [2] for <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_k=C_k+D_k">.
 
-- r_1_hat, r_2_hat, r_12_hat: estimates of r_1, r_2, r_12
+- r_1_hat, r_2_hat, r_12_hat: estimates of r_1, r_2, r_12.
 
 - ccor_hat, ctheta_hat: the estimated canonical correlations and associated angles between the respective latent-factor spaces of <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_1"> and <img src="https://latex.codecogs.com/svg.latex?\Large&space;X_2">.
 
