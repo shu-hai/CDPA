@@ -70,7 +70,7 @@ ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 
 
 
-[1] Qu, Z., & Shu, H. (2019). CDPA: Common and Distinctive Pattern Analysis between High-dimensional Datasets. arXiv preprint [arXiv:1912.09989](https://arxiv.org/abs/1912.09989).
+[1] Shu, H., & Qu, Z. (2019). CDPA: Common and Distinctive Pattern Analysis between High-dimensional Datasets. arXiv preprint [arXiv:1912.09989](https://arxiv.org/abs/1912.09989).
 
 [2] Shu, H., Wang, X., & Zhu, H. (2019) D-CCA: A Decomposition-based Canonical Correlation Analysis for High-dimensional Datasets. Journal of the American Statistical Association, [DOI: 10.1080/01621459.2018.1543599](https://doi.org/10.1080/01621459.2018.1543599) 
  
