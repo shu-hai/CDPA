@@ -68,9 +68,9 @@ ccor_hat, ctheta_hat, C_mat_hat, C_mat_neg_hat, pcor_hat, ptheta_hat \
 
 
 
-[1] Shu, H., & Qu, Z. (2019). CDPA: Common and Distinctive Pattern Analysis between High-dimensional Datasets. arXiv preprint [arXiv:1912.09989](https://arxiv.org/abs/1912.09989).
+[1] Shu, H., & Qu, Z. (2022). [CDPA: Common and Distinctive Pattern Analysis between High-dimensional Datasets.](https://doi.org/10.1214/22-EJS2008) Electronic Journal of Statistics, 16(1), 2475–2517.
 
-[2] Shu, H., Wang, X., & Zhu, H. (2019) D-CCA: A Decomposition-based Canonical Correlation Analysis for High-dimensional Datasets. Journal of the American Statistical Association, [DOI: 10.1080/01621459.2018.1543599](https://doi.org/10.1080/01621459.2018.1543599) 
+[2] Shu, H., Wang, X., & Zhu, H. (2020) [D-CCA: A Decomposition-based Canonical Correlation Analysis for High-dimensional Datasets.](https://doi.org/10.1080/01621459.2018.1543599) Journal of the American Statistical Association, 115(529), 292-306. 
  
 [3] Onatski, A. (2010). Determining the number of factors from empirical distribution of eigenvalues. The Review of Economics and Statistics, 92(4), 1004-1016.
 
